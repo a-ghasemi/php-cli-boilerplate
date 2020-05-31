@@ -7,6 +7,6 @@ namespace App;
 class Kernel
 {
     public function run(){
-        echo 'hi';
+        echo 'Poilerplate is ready.';
     }
 }
