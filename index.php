@@ -2,7 +2,7 @@
 
 include("vendor/autoload.php");
 
-use \App\Kernel;
+use \App\Main;
 
-$app = new Kernel();
+$app = new Main();
 $app->run();

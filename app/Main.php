@@ -4,7 +4,9 @@
 namespace App;
 
 
-class Kernel
+use Kernel\DB;
+
+class Main
 {
     private $db;
 
@@ -12,11 +14,11 @@ class Kernel
         echo "Boilerplate is ready.\n";
 
         $this->db = new DB(
-            get_env('SRC_DB_HOST'),
-            get_env('SRC_DB_PORT'),
-            get_env('SRC_DB_USER'),
-            get_env('SRC_DB_PASS'),
-            get_env('SRC_DB_NAME')
+            env_get('SRC_DB_HOST'),
+            env_get('SRC_DB_PORT'),
+            env_get('SRC_DB_USER'),
+            env_get('SRC_DB_PASS'),
+            env_get('SRC_DB_NAME')
         );
 
         $this->db->connect();

@@ -1,5 +1,5 @@
 {
-    "name": "a-ghasemi/php-huge-data-search",
+    "name": "a-ghasemi/php-cli-boilerplate",
     "authors": [
         {
             "name": "Armin Ghasemi",
@@ -9,7 +9,11 @@
     "require": {},
     "autoload": {
         "psr-4": {
+            "Kernel\\": "kernel",
             "App\\": "app"
-        }
+        },
+        "files": [
+            "kernel/helpers/base_helpers.php"
+        ]
     }
 }
